@@ -1,2 +1,2 @@
-# bootcamp
+# Bootcamp
 Basic website for bootcamp practice
