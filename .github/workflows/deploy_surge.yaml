@@ -6,7 +6,7 @@ name: Deploy Website after code is pushed
 # events but only for the main branch
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
@@ -30,4 +30,4 @@ jobs:
         run: npm install -g surge
       - name: Run Surge
         # folder where the code exists ./ 
-        run: surge ./ bootcampnewapp.surge.sh --token ${{secret.SURGE_TOKEN}}
+        run: surge ./ bootcampnewapp.surge.sh --token ${{secrets.SURGE_TOKEN}}
